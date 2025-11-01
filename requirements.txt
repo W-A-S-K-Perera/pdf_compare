@@ -1,0 +1,9 @@
+pdfplumber
+pandas
+camelot-py[cv]
+jinja2
+opencv-python
+Pillow
+imagehash
+scikit-image
+pdfkit
