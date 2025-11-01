@@ -1,0 +1,473 @@
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>PDF Comparison Report</title>
+      <style>
+        body {font-family: Arial; margin:20px; background:#fff; color:#000;}
+        h1,h2,h3 {color:#003366;}
+        table {border-collapse:collapse; width:100%; margin-bottom:30px;}
+        td,th {border:1px solid #ccc; padding:6px; text-align:center;}
+        th {background:#e6f0ff;}
+        span[style*='red'] {background:#ffe6e6;}
+        span[style*='green'] {background:#e6ffe6;}
+        .imgrow {display:flex; gap:20px; background:#f9f9f9; padding:10px; margin-bottom:10px; border-radius:8px; border:1px solid #ccc;}
+        img {max-width:250px; border:1px solid #ccc; border-radius:6px;}
+        .summary {display:flex; gap:30px; margin:20px 0;}
+        .card {flex:1; padding:15px; background:#f0f7ff; border-radius:10px; text-align:center;
+               box-shadow:0 2px 5px rgba(0,0,0,0.1); font-size:18px;}
+        .count {font-size:28px; font-weight:bold; color:#003366;}
+      </style>
+    </head>
+    <body>
+      <h1>PDF Comparison Report</h1>
+
+      <div class="summary">
+        <div class="card"><div class="count">19</div>Text Differences</div>
+        <div class="card"><div class="count">28</div>Table Differences</div>
+        <div class="card"><div class="count">1</div>Image Differences</div>
+      </div>
+
+      <h2>Text Comparison</h2>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Section</th>
+      <th>Line No.</th>
+      <th>P001 Value</th>
+      <th>P002 Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>1</td>
+      <td><span style='color:black'>Product & primary</span></td>
+      <td><span style='color:black'>Product & primary</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>2</td>
+      <td><span style='color:black'>Product only Secondary packaging Transit packaging</span></td>
+      <td><span style='color:black'>Product only Secondary packaging Transit packaging</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>3</td>
+      <td><span style='color:black'>packaging</span></td>
+      <td><span style='color:black'>packaging</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>4</td>
+      <td><span style='color:red'>Item Quantity 1 1 10 150</span></td>
+      <td><span style='color:green'>Item Quantity 1 1 3 90</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>5</td>
+      <td><span style='color:red'>Width mm 37 37 80 300</span></td>
+      <td><span style='color:green'>Width mm 25 27 100 450</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>6</td>
+      <td><span style='color:red'>Depth mm 15 15 240 350</span></td>
+      <td><span style='color:green'>Depth mm 15 15 18 350</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>7</td>
+      <td><span style='color:red'>Height mm 210 210 60 300</span></td>
+      <td><span style='color:green'>Height mm 240 260 290 350</span></td>
+    </tr>
+    <tr>
+      <td>Product Weights and Measures</td>
+      <td>8</td>
+      <td><span style='color:red'>Weight 126 126 1294 20.1</span></td>
+      <td><span style='color:green'>Weight 50 54 168 5.8</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>1</td>
+      <td><span style='color:red'>Card use 0 Box Case</span></td>
+      <td><span style='color:green'>Card use 0 0 Case</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>2</td>
+      <td><span style='color:red'>Card gms 0 34 675</span></td>
+      <td><span style='color:green'>Card gms 0 0 787.5</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>3</td>
+      <td><span style='color:red'>Plastic use 0 0 -</span></td>
+      <td><span style='color:green'>Plastic use Wallet Bag -</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>4</td>
+      <td><span style='color:red'>Plastic gms 0 0 0</span></td>
+      <td><span style='color:green'>Plastic gms 4 6 0</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>5</td>
+      <td><span style='color:black'>Metal use 0 0 -</span></td>
+      <td><span style='color:black'>Metal use 0 0 -</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>6</td>
+      <td><span style='color:black'>Metal gms 0 0 0</span></td>
+      <td><span style='color:black'>Metal gms 0 0 0</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>7</td>
+      <td><span style='color:black'>Timber use 0 0 -</span></td>
+      <td><span style='color:black'>Timber use 0 0 -</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>8</td>
+      <td><span style='color:black'>Timber gms 0 0 0</span></td>
+      <td><span style='color:black'>Timber gms 0 0 0</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td>9</td>
+      <td><span style='color:red'>14 Aug 2019 12:55PM Created via cki.skoocloud.com 1 of 1</span></td>
+      <td><span style='color:green'>05 May 2020 03:15PM Created via cki.skoocloud.com 1 of 1</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>1</td>
+      <td><span style='color:black'>Product Specification PDF</span></td>
+      <td><span style='color:black'>Product Specification PDF</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>2</td>
+      <td><span style='color:red'>Date Correct as of 14th Aug 2019</span></td>
+      <td><span style='color:green'>Date Correct as of 5th May 2020</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>3</td>
+      <td><span style='color:black'>Brand C.K</span></td>
+      <td><span style='color:black'>Brand C.K</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>4</td>
+      <td><span style='color:red'>Product T4343M 17</span></td>
+      <td><span style='color:green'>Product T0083 6</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>5</td>
+      <td><span style='color:red'>Description Combination Spanner 17mm</span></td>
+      <td><span style='color:green'>Description C.K Engineers File Round 150mm 2nd Cut</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>6</td>
+      <td><span style='color:red'>Barcode 5013969550603</span></td>
+      <td><span style='color:green'>Barcode 5013969390704</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>7</td>
+      <td><span style='color:red'>Commodity code 8204110000</span></td>
+      <td><span style='color:green'>Commodity code 8203100000</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>8</td>
+      <td><span style='color:red'>Country of origin TW</span></td>
+      <td><span style='color:green'>Country of origin PL</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>9</td>
+      <td><span style='color:red'>Features & ~ Drop forged chrome vanadium steel, hardened & tempered for strength & durability ~ Heavy duty chrome plated for</span></td>
+      <td><span style='color:green'>Features & ~ Manufactured from special file steel, precision cut and hardened for outstanding performance and durability ~</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>10</td>
+      <td><span style='color:red'>Benefits corrosion resistance ~ 12° offset bi-hex ring ~ According to DIN 3113 ~ Size: 17 mm ~ Overall length: 210 mm</span></td>
+      <td><span style='color:green'>Benefits Ergonomic soft grip handle for superior comfort and control ~ Specially designed solid inner core for a safe and secure</span></td>
+    </tr>
+    <tr>
+      <td>Header</td>
+      <td>11</td>
+      <td><span style='color:red'></span></td>
+      <td><span style='color:green'>handle to tang bond ~ Profile: Round ~ Second cut ~ Tapered towards the point ~ Length: 150 mm</span></td>
+    </tr>
+  </tbody>
+</table>
+
+      <h2>Table 1 — Product Information</h2>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Field</th>
+      <th>P001</th>
+      <th>P002</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Date</td>
+      <td><span style='color:red'>Correct as of 14th Aug 2019</span></td>
+      <td><span style='color:green'>Correct as of 5th May 2020</span></td>
+    </tr>
+    <tr>
+      <td>Brand</td>
+      <td><span style='color:black'>C.K</span></td>
+      <td><span style='color:black'>C.K</span></td>
+    </tr>
+    <tr>
+      <td>Product</td>
+      <td><span style='color:red'>T4343M 17</span></td>
+      <td><span style='color:green'>T0083 6</span></td>
+    </tr>
+    <tr>
+      <td>Description</td>
+      <td><span style='color:red'>Combination Spanner 17mm</span></td>
+      <td><span style='color:green'>C.K Engineers File Round 150mm 2nd Cut</span></td>
+    </tr>
+    <tr>
+      <td>Barcode</td>
+      <td><span style='color:red'>5013969550603</span></td>
+      <td><span style='color:green'>5013969390704</span></td>
+    </tr>
+    <tr>
+      <td>Commodity code</td>
+      <td><span style='color:red'>8204110000</span></td>
+      <td><span style='color:green'>8203100000</span></td>
+    </tr>
+    <tr>
+      <td>Country of origin</td>
+      <td><span style='color:red'>TW</span></td>
+      <td><span style='color:green'>PL</span></td>
+    </tr>
+  </tbody>
+</table>
+
+      <h2>Table 2 — Product Weights and Packaging Information</h2>
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Item / Measurement</th>
+      <th>Product only P001</th>
+      <th>Product only P002</th>
+      <th>Product & primary packaging P001</th>
+      <th>Product & primary packaging P002</th>
+      <th>Secondary packaging P001</th>
+      <th>Secondary packaging P002</th>
+      <th>Transit packaging P001</th>
+      <th>Transit packaging P002</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Product only</span></td>
+      <td><span style='color:black'>Product only</span></td>
+      <td><span style='color:black'>Product & primary\npackaging</span></td>
+      <td><span style='color:black'>Product & primary\npackaging</span></td>
+      <td><span style='color:black'>Secondary packaging</span></td>
+      <td><span style='color:black'>Secondary packaging</span></td>
+      <td><span style='color:black'>Transit packaging</span></td>
+      <td><span style='color:black'>Transit packaging</span></td>
+    </tr>
+    <tr>
+      <td>Item Quantity</td>
+      <td><span style='color:black'>1</span></td>
+      <td><span style='color:black'>1</span></td>
+      <td><span style='color:black'>1</span></td>
+      <td><span style='color:black'>1</span></td>
+      <td><span style='color:red'>10</span></td>
+      <td><span style='color:green'>3</span></td>
+      <td><span style='color:red'>150</span></td>
+      <td><span style='color:green'>90</span></td>
+    </tr>
+    <tr>
+      <td>Width mm</td>
+      <td><span style='color:red'>37</span></td>
+      <td><span style='color:green'>25</span></td>
+      <td><span style='color:red'>37</span></td>
+      <td><span style='color:green'>27</span></td>
+      <td><span style='color:red'>80</span></td>
+      <td><span style='color:green'>100</span></td>
+      <td><span style='color:red'>300</span></td>
+      <td><span style='color:green'>450</span></td>
+    </tr>
+    <tr>
+      <td>Depth mm</td>
+      <td><span style='color:black'>15</span></td>
+      <td><span style='color:black'>15</span></td>
+      <td><span style='color:black'>15</span></td>
+      <td><span style='color:black'>15</span></td>
+      <td><span style='color:red'>240</span></td>
+      <td><span style='color:green'>18</span></td>
+      <td><span style='color:black'>350</span></td>
+      <td><span style='color:black'>350</span></td>
+    </tr>
+    <tr>
+      <td>Height mm</td>
+      <td><span style='color:red'>210</span></td>
+      <td><span style='color:green'>240</span></td>
+      <td><span style='color:red'>210</span></td>
+      <td><span style='color:green'>260</span></td>
+      <td><span style='color:red'>60</span></td>
+      <td><span style='color:green'>290</span></td>
+      <td><span style='color:red'>300</span></td>
+      <td><span style='color:green'>350</span></td>
+    </tr>
+    <tr>
+      <td>Weight</td>
+      <td><span style='color:red'>126</span></td>
+      <td><span style='color:green'>50</span></td>
+      <td><span style='color:red'>126</span></td>
+      <td><span style='color:green'>54</span></td>
+      <td><span style='color:red'>1294</span></td>
+      <td><span style='color:green'>168</span></td>
+      <td><span style='color:red'>20.1</span></td>
+      <td><span style='color:green'>5.8</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+      <td><span style='color:black'>—</span></td>
+    </tr>
+    <tr>
+      <td>Packaging Information</td>
+      <td><span style='color:black'>Card use</span></td>
+      <td><span style='color:black'>Card use</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:red'>Box</span></td>
+      <td><span style='color:green'>0</span></td>
+      <td><span style='color:black'>Case</span></td>
+      <td><span style='color:black'>Case</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Card gms</span></td>
+      <td><span style='color:black'>Card gms</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:red'>34</span></td>
+      <td><span style='color:green'>0</span></td>
+      <td><span style='color:red'>675</span></td>
+      <td><span style='color:green'>787.5</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Plastic use</span></td>
+      <td><span style='color:black'>Plastic use</span></td>
+      <td><span style='color:red'>0</span></td>
+      <td><span style='color:green'>Wallet</span></td>
+      <td><span style='color:red'>0</span></td>
+      <td><span style='color:green'>Bag</span></td>
+      <td><span style='color:black'>-</span></td>
+      <td><span style='color:black'>-</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Plastic gms</span></td>
+      <td><span style='color:black'>Plastic gms</span></td>
+      <td><span style='color:red'>0</span></td>
+      <td><span style='color:green'>4</span></td>
+      <td><span style='color:red'>0</span></td>
+      <td><span style='color:green'>6</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Metal use</span></td>
+      <td><span style='color:black'>Metal use</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>-</span></td>
+      <td><span style='color:black'>-</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Metal gms</span></td>
+      <td><span style='color:black'>Metal gms</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Timber use</span></td>
+      <td><span style='color:black'>Timber use</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>-</span></td>
+      <td><span style='color:black'>-</span></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><span style='color:black'>Timber gms</span></td>
+      <td><span style='color:black'>Timber gms</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+      <td><span style='color:black'>0</span></td>
+    </tr>
+  </tbody>
+</table>
+
+      <h2>Image Comparison</h2>
+      
+        <div class="imgrow">
+          <div><b>P001</b><br><img src="images/P001 2_page1_img0.png"></div>
+          <div><b>P002</b><br><img src="images/P002 2_page1_img0.png"></div>
+          <div>
+            
+              <b>Hash Diff:</b> 0<br>
+              <b>SSIM:</b> 1.0<br>
+              <b>Similarity:</b> High
+            
+          </div>
+        </div>
+      
+        <div class="imgrow">
+          <div><b>P001</b><br><img src="images/P001 2_page1_img1.png"></div>
+          <div><b>P002</b><br><img src="images/P002 2_page1_img1.png"></div>
+          <div>
+            
+              <b>Hash Diff:</b> 32<br>
+              <b>SSIM:</b> 0.89<br>
+              <b>Similarity:</b> Moderate
+            
+          </div>
+        </div>
+      
+    </body>
+    </html>
+    

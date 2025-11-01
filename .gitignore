@@ -1,19 +1,36 @@
-# Python cache
+# ---------------------------
+# Python Cache Files
+# ---------------------------
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environment
+# ---------------------------
+# Virtual Environment
+# ---------------------------
 venv/
 .env/
 
-# VS Code settings
+# ---------------------------
+# VS Code Settings
+# ---------------------------
 .vscode/
 
-# Output only (keep reports and PDFs in project)
-outputs/
+# ---------------------------
+# Ignore temporary output EXCEPT reports & images
+# ---------------------------
+# Ignore everything in outputs first
+outputs/*
 
-# System files
+# But include the important report and images
+!outputs/report.html
+!outputs/PDF Comparison Report.pdf
+!outputs/images/
+!outputs/images/*
+
+# ---------------------------
+# System Files
+# ---------------------------
 .DS_Store
 Thumbs.db
